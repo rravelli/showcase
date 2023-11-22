@@ -1,0 +1,15 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+    push:
+        branches:
+            - main
+jobs:
+    Deploy-Website:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "🎉 Deploying website 🎉"
+            - run: sudo apt install nodejs
+            - run: sudo apt install npm
+            - run: npm run predeploy
+            - run: npm run deploy
