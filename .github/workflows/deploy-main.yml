@@ -15,8 +15,7 @@ jobs:
 
             - run: |
                   mkdir build
-                  touch build/CNAME
-                  "remiravelli.com" > build/CNAME
+                  echo "remiravelli.com" > build/CNAME
 
             - name: Deploy react app to github pages
               uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
