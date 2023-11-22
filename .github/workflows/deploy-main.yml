@@ -9,7 +9,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "🎉 Deploying website 🎉"
-            - run: sudo apt install nodejs
-            - run: sudo apt install npm
+            - run: sudo apt-get update
+            - run: sudo apt-get install nodejs
+            - run: sudo apt-get install npm
             - run: npm run predeploy
             - run: npm run deploy
