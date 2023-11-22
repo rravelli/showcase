@@ -8,9 +8,20 @@ jobs:
     Deploy-Website:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "🎉 Deploying website 🎉"
-            - run: sudo apt-get update
-            - run: sudo apt-get install nodejs
-            - run: sudo apt-get install npm
-            - run: npm run predeploy
-            - run: npm run deploy
+            - name: Clone the repository
+              uses: actions/checkout@v3
+
+            - name: Setup Node
+              uses: actions/setup-node@v3
+              with:
+                  cache: npm
+                  cache-dependency-path: ./package-lock.json
+
+            - name: Install dependencies
+              run: npm ci --omit=dev
+
+            - name: Predeploy
+              run: npm run predeploy
+
+            - name: Deploy
+              run: npm run deploy
