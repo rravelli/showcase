@@ -36,12 +36,14 @@ export default function HeroSection() {
 						y: 0,
 						opacity: 1,
 						scale: 1,
-						transition: { duration: 0.8, delay: 0.4 },
+						transition: {
+							duration: 0.8,
+							delay: 0.4,
+						},
 					}}
 					src="/showcase/profile.png"
 					className="h-150 w-70 object-cover object-center"
 					style={{
-						// filter: "drop-shadow(10px 0 0px rgba(17,24,39,0.7)) drop-shadow(0 10px 0px white) drop-shadow(-10px 0 0px white) drop-shadow(0 -10px 0px white)",
 						filter: "drop-shadow(-10px 0 0px rgba(17,24,39,0.7)) drop-shadow(10px 0 0px rgba(17,24,39,0.7)) drop-shadow(10px 0 40px rgba(0,0,0,0.3))",
 					}}
 				/>
