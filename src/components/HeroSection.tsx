@@ -47,15 +47,12 @@ export default function HeroSection() {
 						filter: "drop-shadow(-10px 0 0px rgba(17,24,39,0.7)) drop-shadow(10px 0 0px rgba(17,24,39,0.7)) drop-shadow(10px 0 40px rgba(0,0,0,0.3))",
 					}}
 				/>
-				{/* <div className="bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.2)_50%,transparent_75%,transparent_100%)] bg-zinc-950 relative max-w-md overflow-hidden rounded-xl border border-slate-900 bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] bg-no-repeat px-8 py-16 shadow-2xl transition-[background-position_0s_ease] hover:bg-[position:200%_0,0_0] hover:duration-[1500ms]">
-
-				</div> */}
 				<div className="z-10 text-center">
 					<motion.h1
 						initial={{ y: 50 }}
 						animate={{ y: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}
-						className="text-4xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+						className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
 					>
 						Rémi Ravelli
 					</motion.h1>
@@ -65,7 +62,7 @@ export default function HeroSection() {
 						transition={{ duration: 0.8, delay: 0.4 }}
 						className="text-lg md:text-xl text-gray-300 mb-8 px-4"
 					>
-						Full Stack Developer
+						Full Stack Developer / Software Engineer
 					</motion.p>
 					<motion.div
 						initial={"hidden"}
