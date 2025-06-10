@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { Education } from "./Education";
 import { useState } from "react";
+import { Experience } from "./Experience";
 
-export function QualificationSection() {
+export default function QualificationSection() {
 	const [selected, setSelected] = useState<"experience" | "education">(
 		"education"
 	);
 	return (
-		<section className="py-20 px-4 bg-gray-900/50">
+		<section className="py-20 px-4 bg-gray-900/70">
 			<div className="max-w-4xl mx-auto">
 				<div className="flex flex-row justify-center gap-4 mb-4">
 					<motion.h2
@@ -36,6 +37,7 @@ export function QualificationSection() {
 					</motion.h2>
 				</div>
 				{selected === "education" && <Education />}
+				{selected === "experience" && <Experience />}
 			</div>
 		</section>
 	);

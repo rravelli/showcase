@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion";
+import { EMAIL, GITHUB_URL, LINKEDIN_URL } from "../constants";
 
 export default function HeroSection() {
 	const color = "white";
@@ -76,7 +77,7 @@ export default function HeroSection() {
 						className="flex justify-center gap-6"
 					>
 						<motion.a
-							href="https://github.com"
+							href={GITHUB_URL}
 							target="_blank"
 							variants={item}
 							rel="noopener noreferrer"
@@ -91,7 +92,7 @@ export default function HeroSection() {
 							</svg>
 						</motion.a>
 						<motion.a
-							href="https://linkedin.com"
+							href={LINKEDIN_URL}
 							target="_blank"
 							variants={item}
 							rel="noopener noreferrer"
@@ -106,7 +107,7 @@ export default function HeroSection() {
 							</svg>
 						</motion.a>
 						<motion.a
-							href="https://twitter.com"
+							href={`mailto:${EMAIL}`}
 							target="_blank"
 							rel="noopener noreferrer"
 							variants={item}

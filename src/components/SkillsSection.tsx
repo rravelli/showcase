@@ -1,14 +1,5 @@
 import { motion } from "framer-motion";
 
-const skills = [
-	{ skill: "React/Next.js", level: 95 },
-	{ skill: "TypeScript", level: 90 },
-	{ skill: "UI/UX Design", level: 85 },
-	{ skill: "CSS/Sass/Tailwind", level: 95 },
-	{ skill: "JavaScript", level: 90 },
-	{ skill: "Responsive Design", level: 95 },
-];
-
 const languages = [
 	{ name: "Typescript", icon: "/showcase/icons/typescript.png", level: 95 },
 	{ name: "Python", icon: "/showcase/icons/python.png", level: 90 },
@@ -40,6 +31,7 @@ const techs = [
 		icon: "/showcase/icons/postgresql.png",
 	},
 	{ name: "SQLite", icon: "/showcase/icons/sqlite.png" },
+	{ name: "MongoDB", icon: "/showcase/icons/mongodb.png" },
 ];
 
 export default function SkillsSection() {
@@ -55,16 +47,7 @@ export default function SkillsSection() {
 					Technical Skills
 				</motion.h2>
 
-				<motion.h3
-					initial={{ opacity: 0 }}
-					whileInView={{ opacity: 1 }}
-					viewport={{ once: true }}
-					className="text-2xl font-bold m-12 text-center"
-				>
-					Languages
-				</motion.h3>
-
-				<div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+				<div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
 					{languages.map((item, index) => (
 						<motion.div
 							key={index}
@@ -99,7 +82,7 @@ export default function SkillsSection() {
 						</motion.div>
 					))}
 				</div>
-
+				{/* 
 				<motion.h3
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
@@ -107,8 +90,8 @@ export default function SkillsSection() {
 					className="text-2xl font-bold m-12 text-center"
 				>
 					Technologies
-				</motion.h3>
-				<div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+				</motion.h3> */}
+				<div className="mt-24 grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
 					{techs.map((item, index) => (
 						<motion.div
 							key={item.name}
@@ -126,7 +109,6 @@ export default function SkillsSection() {
 							}}
 							viewport={{ once: true }}
 							transition={{ duration: 0.4 }}
-							// whileHover={{ scale: 1.05 }}
 							className="bg-white/5 rounded-xl p-6 text-center hover:bg-white/10 transition-colors flex items-center justify-center gap-3"
 						>
 							<img

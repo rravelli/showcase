@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export function Education() {
+export function Experience() {
 	return (
 		<>
 			<div
@@ -15,22 +15,22 @@ export function Education() {
 					initial={{ x: -100, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
 					transition={{ duration: 1 }}
-					viewport={{ once: true }}
 					className="text-right py-6"
+					viewport={{ once: true }}
 				>
 					<h3 className="text-xl font-bold">
-						Engineering degree (Equivalent to a Master Degree)
+						Frontend Developer Intern
 					</h3>
-					<span>Centrale Nantes, France</span>
-					<div className="text-gray-400">Sept 2021 - Sept 2024</div>
+					<span>Merica s.r.o, Prague (Czechia)</span>
+					<div className="text-gray-400">April 2024 - Sept 2024</div>
 				</motion.div>
 
 				<motion.span
 					initial={{ height: "0%" }}
 					whileInView={{ height: "100%" }}
 					transition={{ duration: 1 }}
-					viewport={{ once: true }}
 					className="w-1 h-full bg-red-100 block"
+					viewport={{ once: true }}
 				/>
 			</div>
 			<div
@@ -45,8 +45,8 @@ export function Education() {
 					initial={{ height: "0%" }}
 					whileInView={{ height: "100%" }}
 					transition={{ duration: 1 }}
-					viewport={{ once: true }}
 					className="w-1 h-full bg-red-100 block"
+					viewport={{ once: true }}
 				/>
 				<motion.div
 					initial={{ x: 100, opacity: 0 }}
@@ -56,9 +56,9 @@ export function Education() {
 					viewport={{ once: true }}
 				>
 					<h3 className="text-xl font-bold">
-						Classe préparatoire MPSI/MP
+						Software Engineer Intern
 					</h3>
-					<span>Lycée Montaigne, Bordeaux (France)</span>
+					<span>Ripple Motion, Nantes (France)</span>
 					<div className="text-gray-400">Sept 2019 - Sept 2021</div>
 				</motion.div>
 			</div>
