@@ -59,7 +59,9 @@ export function Experience() {
 						Software Engineer Intern
 					</h3>
 					<span>Ripple Motion, Nantes (France)</span>
-					<div className="text-gray-400">Sept 2019 - Sept 2021</div>
+					<div className="text-gray-400">
+						April 2019 - August 2021
+					</div>
 				</motion.div>
 			</div>
 		</>
