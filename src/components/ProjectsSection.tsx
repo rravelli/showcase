@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const projects = [
 	{
 		id: 1,
 		title: "Nantral Platform",
-		description: "Student website for Centrale Nantes",
 		image: "/showcase/images/nantral_platform.png",
 		github: "https://github.com/3cn-ecn/nantralPlatform",
 		url: "https://nantral-platform.fr",
@@ -12,13 +12,13 @@ const projects = [
 	{
 		id: 2,
 		title: "The Youtube Quiz",
-		description: "Quiz game where you have to guess youtube thumbnail",
 		image: "/showcase/images/theytquiz.png",
 		url: "https://theytquiz.vercel.app",
 	},
 ];
 
 export default function ProjectsSection() {
+	const { t } = useTranslation();
 	return (
 		<section className="py-12 md:py-20 px-4 max-w-7xl mx-auto">
 			<motion.h2
@@ -28,18 +28,17 @@ export default function ProjectsSection() {
 				transition={{ duration: 0.6 }}
 				className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center"
 			>
-				Featured Projects
+				{t("projects.title")}
 			</motion.h2>
 
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-				{projects.map((project) => (
+				{projects.map((project, index) => (
 					<motion.div
 						key={project.id}
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
-						transition={{ duration: 0.6, delay: project.id * 0.1 }}
-						// whileHover={{ scale: 1.06 }}
+						transition={{ duration: 0.6, delay: (index + 1) * 0.1 }}
 						className="group relative aspect-video bg-gradient-to-br from-purple-900/50 to-blue-900/50 rounded-xl overflow-hidden"
 					>
 						<img
@@ -50,10 +49,10 @@ export default function ProjectsSection() {
 						<div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300" />
 						<div className="absolute inset-0 p-6 flex flex-col justify-end">
 							<h3 className="text-xl font-bold mb-2">
-								{project.title}
+								{t(`projects.list.${project.id}.title`)}
 							</h3>
 							<p className="text-gray-300 mb-4">
-								{project.description}
+								{t(`projects.list.${project.id}.description`)}
 							</p>
 							<div className="flex gap-4">
 								{project?.url && (
@@ -61,7 +60,7 @@ export default function ProjectsSection() {
 										href={project.url}
 										className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
 									>
-										View Project
+										{t("projects.viewProject")}
 									</a>
 								)}
 								{project?.github && (

@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { EMAIL, GITHUB_URL, LINKEDIN_URL } from "../constants";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
+	const { t } = useTranslation();
 	return (
 		<section className="py-12 md:py-20 px-4">
 			<div className="max-w-3xl mx-auto text-center">
@@ -14,7 +16,7 @@ export default function ContactSection() {
 					transition={{ duration: 0.6 }}
 					className="text-3xl md:text-4xl font-bold mb-8"
 				>
-					Let&apos;s Connect
+					{t("contact.title")}
 				</motion.h2>
 				<motion.p
 					initial={{ opacity: 0, y: 20 }}
@@ -67,7 +69,7 @@ export default function ContactSection() {
 							<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
 							<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
 						</svg>
-						<span>Get in Touch</span>
+						<span>{t("contact.contactMe")}</span>
 					</a>
 					<a
 						href="/showcase/resume.pdf"
@@ -83,7 +85,7 @@ export default function ContactSection() {
 							<path d="M8 11a1 1 0 100 2h4a1 1 0 100-2H8z" />
 							<path d="M8 7a1 1 0 100 2h4a1 1 0 100-2H8z" />
 						</svg>
-						<span>View Resume</span>
+						<span>{t("contact.viewResume")}</span>
 					</a>
 				</motion.div>
 
