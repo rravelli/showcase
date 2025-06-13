@@ -1,0 +1,63 @@
+{
+	"hero": {
+		"title": "Développeur Full Stack / Ingénieur Logiciel"
+	},
+	"projects": {
+		"title": "Projets en vedette",
+		"viewProject": "Voir le Project",
+		"list": {
+			"1": {
+				"title": "Nantral Platform",
+				"description": "Site étudiant de Centrale Nantes"
+			},
+			"2": {
+				"title": "The Youtube Quiz",
+				"description": "Un jeu de quiz multijoueur sur le thème des miniatures Youtube"
+			},
+			"3": {
+				"title": "Inforeg",
+				"description": "Logiciel pédagogique pour la théorie des graphes."
+			}
+		}
+	},
+	"skills": {
+		"title": "Compétences Techniques"
+	},
+	"qualification": {
+		"education": {
+			"title": "Formations",
+			"list": {
+				"1": {
+					"title": "Diplôme d'ingénieur généraliste",
+					"place": "Centrale Nantes, France",
+					"dates": "Sept 2021 - Sept 2024"
+				},
+				"2": {
+					"title": "Classe préparatoire MPSI/MP",
+					"place": "Lycée Montaigne, Bordeaux",
+					"dates": "Sept 2019 - Sept 2021"
+				}
+			}
+		},
+		"experience": {
+			"title": "Expérience",
+			"list": {
+				"1": {
+					"title": "Développeur Frontend Stagiaire",
+					"place": "Merica s.r.o, Prague (Tchéquie)",
+					"dates": "Avril 2024 - Sept 2024"
+				},
+				"2": {
+					"title": "Stagiaire Ingénieur Informatique",
+					"place": "Ripple Motion, Nantes",
+					"dates": "Avril 2022 - Août 2022"
+				}
+			}
+		}
+	},
+	"contact": {
+		"title": "Restons en contact",
+		"contactMe": "Me contacter",
+		"viewResume": "Voir mon CV"
+	}
+}

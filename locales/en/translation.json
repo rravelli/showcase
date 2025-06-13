@@ -1,0 +1,63 @@
+{
+	"hero": {
+		"title": "Full Stack Developer / Software Engineer"
+	},
+	"projects": {
+		"title": "Featured Projects",
+		"viewProject": "View Project",
+		"list": {
+			"1": {
+				"title": "Nantral Platform",
+				"description": "Student website for Centrale Nantes"
+			},
+			"2": {
+				"title": "The Youtube Quiz",
+				"description": "Quiz game where you have to guess the correct Youtube thumbnail"
+			},
+			"3": {
+				"title": "Inforeg",
+				"description": "Pedagogical software for graph theory."
+			}
+		}
+	},
+	"skills": {
+		"title": "Technical Skills"
+	},
+	"qualification": {
+		"education": {
+			"title": "Education",
+			"list": {
+				"1": {
+					"title": "Engineering degree (Equivalent to a Master Degree)",
+					"place": "Centrale Nantes, France",
+					"dates": "Sept 2021 - Sept 2024"
+				},
+				"2": {
+					"title": "Classe préparatoire MPSI/MP",
+					"place": "Lycée Montaigne, Bordeaux (France)",
+					"dates": "Sept 2019 - Sept 2021"
+				}
+			}
+		},
+		"experience": {
+			"title": "Experience",
+			"list": {
+				"1": {
+					"title": "Frontend Developer Intern",
+					"place": "Merica s.r.o, Prague (Czechia)",
+					"dates": "April 2024 - Sept 2024"
+				},
+				"2": {
+					"title": "Software Engineer Intern",
+					"place": "Ripple Motion, Nantes (France)",
+					"dates": "April 2022 - August 2022"
+				}
+			}
+		}
+	},
+	"contact": {
+		"title": "Let's Connect",
+		"contactMe": "Get in Touch",
+		"viewResume": "View Resume"
+	}
+}
