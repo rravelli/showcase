@@ -42,7 +42,11 @@ export default function HeroSection() {
 					className="p-2 bg-white/5 rounded-md hover:bg-white/10 transition-colors"
 				>
 					{Object.keys(langs).map((key: any) => (
-						<option key={key} value={key}>
+						<option
+							className="bg-gray-900 text-gray-100 rounded-md"
+							key={key}
+							value={key}
+						>
 							{langs[key].name}
 						</option>
 					))}

@@ -10,6 +10,12 @@ const projects = [
 		url: "https://nantral-platform.fr",
 	},
 	{
+		id: 3,
+		title: "Inforeg",
+		image: "/showcase/images/inforeg.png",
+		github: "https://github.com/Inky19/INFOREG",
+	},
+	{
 		id: 2,
 		title: "The Youtube Quiz",
 		image: "/showcase/images/theytquiz.png",

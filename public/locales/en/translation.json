@@ -13,6 +13,10 @@
 			"2": {
 				"title": "The Youtube Quiz",
 				"description": "Quiz game where you have to guess the correct Youtube thumbnail"
+			},
+			"3": {
+				"title": "Inforeg",
+				"description": "Pedagogical software for graph theory."
 			}
 		}
 	},

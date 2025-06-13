@@ -13,6 +13,10 @@
 			"2": {
 				"title": "The Youtube Quiz",
 				"description": "Un jeu de quiz multijoueur sur le thème des miniatures Youtube"
+			},
+			"3": {
+				"title": "Inforeg",
+				"description": "Logiciel pédagogique pour la théorie des graphes."
 			}
 		}
 	},
