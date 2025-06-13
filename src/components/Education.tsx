@@ -16,6 +16,7 @@ export function Education() {
 						direction: index == 0 ? "ltr" : "rtl",
 					}}
 					className="mb-6"
+					key={exp.id}
 				>
 					<motion.div
 						initial={{ x: index % 2 == 0 ? -100 : 100, opacity: 0 }}

@@ -11,7 +11,7 @@ i18n.use(LanguageDetector)
 	.use(initReactI18next)
 	// init i18next
 	.init({
-		debug: true,
+		debug: process.env.NODE_ENV === "development",
 		fallbackLng: "en",
 		interpolation: {
 			escapeValue: false, // not needed for react as it escapes by default
