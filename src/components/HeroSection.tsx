@@ -76,7 +76,7 @@ export default function HeroSection() {
 							delay: 0.4,
 						},
 					}}
-					src="/showcase/profile.png"
+					src="/showcase/images/profile.png"
 					className="h-150 w-70 object-cover object-center"
 					style={{
 						filter: "drop-shadow(-10px 0 0px rgba(17,24,39,0.7)) drop-shadow(10px 0 0px rgba(17,24,39,0.7)) drop-shadow(10px 0 40px rgba(0,0,0,0.3))",
